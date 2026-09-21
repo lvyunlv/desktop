@@ -70,6 +70,26 @@ export const pluginTranslations = {
     "settings.plugins.configuration.needsConfiguration": "需要配置",
     "settings.plugins.configuration.unavailableBadge": "配置不可用",
     "settings.plugins.invalidDeclaration": "配置声明无效",
+    "settings.plugins.mcpHealth.healthy": "Host 已完成握手",
+    "settings.plugins.mcpHealth.healthyHint":
+      "检测成功只说明 Host 当前能完成握手与工具列表读取，不代表该 MCP 已在会话内生效。",
+    "settings.plugins.mcpHealth.unhealthy": "Host 当前连不上：{{reason}}",
+    "settings.plugins.mcpHealth.notProbed": "尚未检测",
+    "settings.plugins.mcpHealth.contextMissing": "需要会话的工作目录",
+    "settings.plugins.mcpHealth.contextMissingHint":
+      "打开会话后按该会话的工作目录检测。",
+    "settings.plugins.mcpHealth.reDetect": "重新检测",
+    "settings.plugins.mcpHealth.reDetecting": "检测中",
+    "settings.plugins.mcpHealth.probeFailed": "重新检测失败",
+    "settings.plugins.mcpHealth.code.mcpSpawnFailed": "无法启动 MCP 进程",
+    "settings.plugins.mcpHealth.code.mcpExitedPrematurely":
+      "进程在握手完成前退出",
+    "settings.plugins.mcpHealth.code.mcpHandshakeFailed": "握手失败",
+    "settings.plugins.mcpHealth.code.mcpProbeTimeout": "检测超时",
+    "settings.plugins.mcpHealth.code.mcpToolsUnavailable": "无法读取工具列表",
+    "settings.plugins.mcpHealth.code.mcpHttpUnreachable": "无法连接 HTTP 端点",
+    "settings.plugins.mcpHealth.code.mcpHttpUnauthorized": "HTTP 鉴权失败",
+    "settings.plugins.mcpHealth.code.mcpHttpServerError": "HTTP 服务端错误",
     "settings.plugins.configuration.default": "默认值",
     "settings.plugins.configuration.notSet": "未设置",
     "settings.plugins.configuration.configuredSecret": "已配置；输入新值以替换",
@@ -161,6 +181,16 @@ export const pluginTranslations = {
     "settings.plugins.stop": "停止",
     "settings.plugins.startFailed": "启动失败",
     "settings.plugins.stopFailed": "停止失败",
+    "settings.plugins.logLevel": "日志级别",
+    "settings.plugins.logLevel.trace": "Trace",
+    "settings.plugins.logLevel.debug": "Debug",
+    "settings.plugins.logLevel.info": "Info",
+    "settings.plugins.logLevel.warn": "Warn",
+    "settings.plugins.logLevel.error": "Error",
+    "settings.plugins.logLevelUpdateFailed": "插件日志级别未能保存。",
+    "settings.plugins.downloadLog": "下载日志",
+    "settings.plugins.logDownloaded": "插件日志已下载。",
+    "settings.plugins.logDownloadFailed": "插件日志下载失败，请稍后重试。",
     "settings.plugins.uninstall": "卸载",
     "settings.plugins.uninstallTitle": "卸载“{{name}}”？",
     "settings.plugins.uninstallDescription":
@@ -189,6 +219,9 @@ export const pluginTranslations = {
     "settings.plugins.import": "导入插件",
     "settings.plugins.importSuccess": "插件已导入。",
     "settings.plugins.importFailed": "导入失败",
+    "settings.plugins.importWorkflowsImported": "并导入了 {{count}} 个工作流。",
+    "settings.plugins.importWorkflowsSummary":
+      "导入了 {{imported}} 个工作流，{{failed}} 个被拒绝。",
     "settings.plugins.pathSelectionError": "无法选择插件文件。",
     "settings.plugins.uninstalling": "卸载中",
     "settings.plugins.runtimeFailing": "运行失败",
@@ -397,6 +430,34 @@ export const pluginTranslations = {
     "settings.plugins.configuration.unavailableBadge":
       "Configuration unavailable",
     "settings.plugins.invalidDeclaration": "Invalid configuration declaration",
+    "settings.plugins.mcpHealth.healthy": "Host completed the handshake",
+    "settings.plugins.mcpHealth.healthyHint":
+      "A successful probe only means the Host can handshake and list tools right now; it does not mean this MCP is in effect inside a session.",
+    "settings.plugins.mcpHealth.unhealthy":
+      "The Host cannot reach it right now: {{reason}}",
+    "settings.plugins.mcpHealth.notProbed": "Not probed yet",
+    "settings.plugins.mcpHealth.contextMissing":
+      "Needs a session workspace directory",
+    "settings.plugins.mcpHealth.contextMissingHint":
+      "Open a session to probe against that session's workspace directory.",
+    "settings.plugins.mcpHealth.reDetect": "Re-detect",
+    "settings.plugins.mcpHealth.reDetecting": "Detecting",
+    "settings.plugins.mcpHealth.probeFailed": "Re-detection failed",
+    "settings.plugins.mcpHealth.code.mcpSpawnFailed":
+      "The MCP process could not start",
+    "settings.plugins.mcpHealth.code.mcpExitedPrematurely":
+      "The process exited before the handshake finished",
+    "settings.plugins.mcpHealth.code.mcpHandshakeFailed":
+      "The handshake failed",
+    "settings.plugins.mcpHealth.code.mcpProbeTimeout": "The probe timed out",
+    "settings.plugins.mcpHealth.code.mcpToolsUnavailable":
+      "Tools could not be listed",
+    "settings.plugins.mcpHealth.code.mcpHttpUnreachable":
+      "The HTTP endpoint is unreachable",
+    "settings.plugins.mcpHealth.code.mcpHttpUnauthorized":
+      "HTTP authentication failed",
+    "settings.plugins.mcpHealth.code.mcpHttpServerError":
+      "The HTTP endpoint returned an error",
     "settings.plugins.configuration.default": "Default",
     "settings.plugins.configuration.notSet": "Not set",
     "settings.plugins.configuration.configuredSecret":
@@ -493,6 +554,18 @@ export const pluginTranslations = {
     "settings.plugins.stop": "Stop",
     "settings.plugins.startFailed": "Start failed",
     "settings.plugins.stopFailed": "Stop failed",
+    "settings.plugins.logLevel": "Log level",
+    "settings.plugins.logLevel.trace": "Trace",
+    "settings.plugins.logLevel.debug": "Debug",
+    "settings.plugins.logLevel.info": "Info",
+    "settings.plugins.logLevel.warn": "Warn",
+    "settings.plugins.logLevel.error": "Error",
+    "settings.plugins.logLevelUpdateFailed":
+      "The plugin log level could not be saved.",
+    "settings.plugins.downloadLog": "Download log",
+    "settings.plugins.logDownloaded": "The plugin log was downloaded.",
+    "settings.plugins.logDownloadFailed":
+      "Could not download the plugin log. Try again later.",
     "settings.plugins.uninstall": "Uninstall",
     "settings.plugins.uninstallTitle": "Uninstall {{name}}?",
     "settings.plugins.uninstallDescription":
@@ -523,6 +596,10 @@ export const pluginTranslations = {
     "settings.plugins.import": "Import plugin",
     "settings.plugins.importSuccess": "Plugin imported.",
     "settings.plugins.importFailed": "Import failed",
+    "settings.plugins.importWorkflowsImported":
+      "Imported {{count}} workflow(s) as well.",
+    "settings.plugins.importWorkflowsSummary":
+      "Imported {{imported}} workflow(s); {{failed}} were refused.",
     "settings.plugins.pathSelectionError": "Unable to select a plugin file.",
     "settings.plugins.uninstalling": "Uninstalling",
     "settings.plugins.runtimeFailing": "Runtime failed",
